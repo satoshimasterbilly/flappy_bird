@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Main container for the game canvas and UI elements -->
+<div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+    <!-- UI layer that sits on top of the canvas -->
+    <div id="ui-layer">
+        <!-- Displays the current score during gameplay -->
+        <div id="score">0</div>
+        <!-- Initial screen shown before the game starts -->
+        <div id="start-screen" class="message">
+            <h1>Flappy Bird</h1>
+            <p>Click or Tap to Start</p>
+        </div>
+        <!-- Screen shown when the game is over -->
+        <div id="game-over" class="message" style="display: none;">
+            <h1>Game Over</h1>
+            <p>Your score: <span id="final-score">0</span></p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+</div>
+
+<!-- Link to your JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
